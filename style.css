@@ -39,6 +39,8 @@ body {
 .card {
   height: fit-content;
   width: 90vw;
+  border-radius: 15px;
+  filter: drop-shadow(4px 4px 8px 16px rgba(5, 5, 5, 0.616));
   max-width: 350px;
   display: flex;
   justify-content: center;
@@ -48,19 +50,11 @@ body {
   background: white;
 }
 
-/*.card__header {
-  background-image: url(/images/bg-pattern-card.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 150px;
-  width: 350px;
-  position: relative;
-}*/
-
 .header__image {
   height: min-content;
   width: 100%;
   overflow: hidden;
+  border-radius: 15px 15px 0 0;
 }
 .profile__image {
   border-radius: 50%;
@@ -68,19 +62,35 @@ body {
   height: 90px;
   border: 2px solid white;
   position: relative;
-  top: -30px;
+  top: -45px;
 }
 
 .card__profile {
-  margin: 10px;
   position: relative;
-  top: -40px;
+  top: -20px;
+}
+
+.card__title {
+  margin-bottom: 10px;
+  color: var(--clr-dark);
+  font-weight: var(--fw-bold);
+}
+
+.location {
+  color: var(--clr-darkGray);
+  font-weight: 100;
+}
+.age {
+  color: var(--clr-darkGray);
+  font-size: 1.2rem;
+  font-weight: 100;
 }
 
 .line {
   height: 1px;
   width: 350px;
   background-color: var(--clr-darkGray);
+  opacity: 0.4;
 }
 
 .card__stats {
@@ -90,7 +100,19 @@ body {
   align-items: center;
 }
 
-.stats {
-  padding: 10px;
+.stat {
   margin: 30px;
+  text-align: center;
+}
+
+.stat__title {
+  color: var(--clr-dark);
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.stat__desc {
+  color: var(--clr-darkGray);
+  font-size: 0.9rem;
+  font-weight: 100;
 }
