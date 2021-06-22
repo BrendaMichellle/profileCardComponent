@@ -1,0 +1,96 @@
+/*font-family: 'Kumbh Sans', sans-serif;*/
+:root {
+  /*font-family*/
+  --ff-text: 'Kumbh Sans', sans-serif;
+  /*font-weight*/
+  --fw-reg: 400;
+  --fw-bold: 700;
+  /*colors*/
+  --clr-light: hsl(227, 10%, 46%);
+  --clr-accent: hsl(185, 75%, 39%);
+  --clr-dark: hsl(229, 23%, 23%);
+  --clr-darkGray: hsl(0, 0%, 59%);
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--clr-accent);
+  text-align: center;
+  background-image: url('images/bg-pattern-top.svg'),
+    url('images/bg-pattern-bottom.svg');
+  background-repeat: no-repeat, no-repeat;
+  background-size: 700px 700px, 700px 700px;
+  background-position: -35% 40%, 125% -45%;
+  font-family: var(--ff-text);
+  font-size: 18px;
+}
+
+.card {
+  height: fit-content;
+  width: 90vw;
+  max-width: 350px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 120px auto 0 auto;
+  background: white;
+}
+
+/*.card__header {
+  background-image: url(/images/bg-pattern-card.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 150px;
+  width: 350px;
+  position: relative;
+}*/
+
+.header__image {
+  height: min-content;
+  width: 100%;
+  overflow: hidden;
+}
+.profile__image {
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  border: 2px solid white;
+  position: relative;
+  top: -30px;
+}
+
+.card__profile {
+  margin: 10px;
+  position: relative;
+  top: -40px;
+}
+
+.line {
+  height: 1px;
+  width: 350px;
+  background-color: var(--clr-darkGray);
+}
+
+.card__stats {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stats {
+  padding: 10px;
+  margin: 30px;
+}
