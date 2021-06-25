@@ -11,12 +11,12 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### Screenshot
 
-<img src="/images/deskDesign.png" alt="">
+<img src="/images/desktopDesign.png" alt="">
 
 ### Links
 
 - Solution URL: [View solution](https://www.frontendmentor.io/solutions/responsive-stats-preview-card-component-html5-sassscss-kxpiOE5Tt)
-- Live Site: [live site](https://brendamichellle.github.io/statsPreviewComponent/)
+- Live Site: [live site](https://brendamichellle.github.io/profileCardComponent/)
 
 ## My process
 
