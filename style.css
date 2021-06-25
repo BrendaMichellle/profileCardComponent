@@ -10,6 +10,9 @@
   --clr-accent: hsl(185, 75%, 39%);
   --clr-dark: hsl(229, 23%, 23%);
   --clr-darkGray: hsl(0, 0%, 59%);
+  /*box-shadow*/
+  --bs: 0.25em 0.25em 1.75em rgba(0, 0, 0, 0.25),
+    0.125em 0.125em 1.25em rgba(0, 0, 0, 0.15);
 }
 
 *,
@@ -30,17 +33,29 @@ body {
   background-image: url('images/bg-pattern-top.svg'),
     url('images/bg-pattern-bottom.svg');
   background-repeat: no-repeat, no-repeat;
-  background-size: 700px 700px, 700px 700px;
-  background-position: -35% 40%, 125% -45%;
+  background-size: 700px 700px, 800px 800px;
+  background-position: -20% 170%, 140% -115%;
   font-family: var(--ff-text);
   font-size: 18px;
+}
+
+@media screen and (max-width: 1000px) {
+  body {
+    background-position: -100% 170%, 400% -115%;
+  }
+}
+@media screen and (max-width: 700px) {
+  body {
+    background-size: 500px 500px, 500px 500px;
+    background-position: -15em -15em, 20em 20em;
+  }
 }
 
 .card {
   height: fit-content;
   width: 90vw;
   border-radius: 15px;
-  filter: drop-shadow(4px 4px 8px 16px rgba(5, 5, 5, 0.616));
+  box-shadow: var(--bs);
   max-width: 350px;
   display: flex;
   justify-content: center;
